@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  python-app:
+    build: .
+    container_name: python-ft-linear-regression
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: /bin/bash
+    stdin_open: true
+    tty: true
